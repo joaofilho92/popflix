@@ -1,0 +1,83 @@
+/* Imports */
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 700;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 800;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 500;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff) format('woff')
+}
+
+body{
+    background-color: black;
+}
+
+.headstyle{
+    font-weight: bold;
+    font-size: 23px;
+    font-family: 'Netflix Sans';
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    color: rgb(175, 175, 175);
+}
+
+.searchinp{
+    background-color: transparent;
+    border: 1px solid rgb(141, 141, 141);
+    width: 100%;   
+    background-color: rgb(51,51,51);
+    font-size: 18px;
+    color: rgb(175, 175, 175);
+    text-indent: 12px;
+}
+
+.searchinp::placeholder {
+  color: rgb(175, 175, 175);
+  font-size: 18px;
+  text-indent: 12px;
+  font-family: 'Netflix Sans';
+}
+
+.searchinp:hover {
+  border-color: #a70099; 
+}
+
+.searchinp:focus {
+  border-color: red; 
+}
+
+.btn5{
+  background-color:  #a70099;
+  margin-top: 15px;
+  font-family: 'Netflix Sans';
+}
+
+.btn5:hover{
+  background-color:  #79016f;
+  margin-top: 15px;
+  font-weight: 500;
+}
+.btn5:active{
+  background-color:  #79016f;
+}
+
+.grd1{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+

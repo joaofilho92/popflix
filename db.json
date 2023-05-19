@@ -1,0 +1,39 @@
+{
+  "user": [
+    {
+      "id": "joao@gmail.com",
+      "username": "joao@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": "Marcelo@gmail.com",
+      "name": "Marcelo",
+      "password": "1234"
+    },
+    {
+      "id": "jujuba@gmail.com",
+      "name": "jujuba",
+      "password": "123"
+    },
+    {
+      "id": "ds",
+      "name": "ds",
+      "password": "sd"
+    },
+    {
+      "id": "jujuba1@gmail.com",
+      "name": "jujuba1",
+      "password": "123"
+    },
+    {
+      "id": "joao@hotmail.com",
+      "name": "Joao Batista",
+      "password": "123"
+    },
+    {
+      "id": "test@gmail.com",
+      "name": "test",
+      "password": "123"
+    }
+  ]
+}

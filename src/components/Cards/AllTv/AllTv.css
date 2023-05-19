@@ -1,0 +1,71 @@
+/* Imports */
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 700;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 800;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 500;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff) format('woff')
+}
+
+/* CSS  */
+
+.title_01{
+    color: white;
+    font-family: 'Netflix Sans';
+    font-size: 1.7rem;
+}
+
+.box_01{
+    background-color: #a70099;
+    margin-top: -3px;
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card_01{
+    width: 15rem;
+    object-fit: cover;
+    height: 400px;
+    border-radius: 0;
+}
+
+.LoadMoreButton_01{
+    width: 100%;
+    color: #a70099;
+    border: 1px solid #a70099;
+}
+
+.LoadMoreButton_01:hover{
+    color: #86017b;
+    border: 1px solid #86017b;
+}
+
+.PlayButtonCard{
+    width: 40%;
+    height: 90%;
+    background-color: red;
+    border: 0;
+    margin-top: 10px;
+    border-radius: 5%;
+}
+
+.PlayButtonCard:hover{
+    background-color: rgb(189, 4, 4);
+}

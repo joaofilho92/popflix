@@ -1,0 +1,112 @@
+/* Imports */
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 700;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 800;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 500;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff) format('woff')
+}
+
+/* Form */
+
+.cont1 {
+  margin: 0;
+  /* background-image: url("/public/img/background.jpg"); */
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.form1 {
+    width: 420px;
+    height: 480px;
+    background-color: rgb(13,13,13);
+    border-radius: 1%;
+}
+
+.title{
+    color: white;
+    font-family: 'Netflix Sans';
+    font-size: 32px;
+    font-weight: 500;
+}
+
+input{
+    width: 100%;
+    height: 45px;
+    border: none;
+    outline: none;
+    background-color: rgb(51,51,51);
+    font-size: 18px;
+    color: rgb(175, 175, 175);
+    text-indent: 12px;
+}
+
+input::placeholder {
+  color: rgb(175, 175, 175);
+  font-size: 18px;
+  text-indent: 12px;
+  font-family: 'Netflix Sans';
+}
+
+.inp2{
+    margin-bottom: 15px;
+    margin-top: 40px;
+    font-family: 'Netflix Sans';
+}
+
+.inpt1{
+  margin-top: -90px;
+}
+
+.btn10{
+    margin-top: 30px;
+    width: 100%;
+    height: 45px;
+    background-color:  #a70099;
+    border: none;
+    outline: none;
+    font-family: 'Netflix Sans';
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn10:hover{
+  color: white;
+  background-color:  #800275;
+}
+
+.ho3{
+    color: rgb(199, 199, 199);
+    font-family: 'Netflix Sans';
+    text-align: center;
+    font-size: 15px;
+}
+
+.spn2{
+  text-decoration: none;
+  color: white;
+}
+
+.spn2:hover{
+  color:  #800275;
+}
+
+
