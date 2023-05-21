@@ -1,24 +1,27 @@
 import React, { useEffect, useState } from "react";
 import Card from "react-bootstrap/Card";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./TopRatedSeries.css";
-import Box from "@mui/material/Box";
+import "./AlsoLike.css";
 import { Link } from "react-router-dom";
+import Box from "@mui/material/Box";
 
-const TopRatedSeries = () => {
-  const [TopRatedSeries, setTopRatedSeries] = useState([]);
-
+const AllTv = () => {
+  const [AllTv, setAllTv] = useState([]);
+  
   useEffect(() => {
     fetch(
-      "https://api.themoviedb.org/3/tv/top_rated?api_key=d08dca53e8c642f369801f9213d0eb94&language=en-US"
+      `https://api.themoviedb.org/3/tv/top_rated?api_key=d08dca53e8c642f369801f9213d0eb94&language=en-US`
     )
       .then((res) => res.json())
-      .then((data) => setTopRatedSeries(data.results.slice(0, 5)));
+      .then((data) => setAllTv(data.results.slice(0, 5)));
   }, []);
+   const handleScrollToTop = () => {
+     window.scrollTo({ top: 0, behavior: "smooth" });
+   };
 
   return (
-    <div className="p-5 first_01">
-      <h1 className="title_01">Top Rated Series</h1>
+    <div className="p-5 first2">
+      <h1 className="title_01">You may also Like</h1>
       <Box
         sx={{
           width: 70,
@@ -27,20 +30,20 @@ const TopRatedSeries = () => {
         className="box_01"
       />
       <div className="image-container d-flex justify-content-center flex-wrap mt-4">
-        {TopRatedSeries.map((serie) => {
-          const releaseYear = serie.first_air_date.split("-")[0];
+        {AllTv.map((movie) => {
+          const releaseYear = movie.first_air_date.split("-")[0];
           return (
             <Card className="movie-card mx-1 my-2">
               <Card.Img
                 variant="top"
                 className="card_01"
                 src={`https://image.tmdb.org/t/p/original${
-                  serie && serie.poster_path
+                  movie && movie.poster_path
                 }`}
               />
               <Card.Body className="card-body">
-                <Card.Title className="title_02">
-                  {serie.vote_average}{" "}
+                <Card.Title className="title_04">
+                  {movie.vote_average}{" "}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
@@ -52,10 +55,13 @@ const TopRatedSeries = () => {
                     <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
                   </svg>
                 </Card.Title>
-                <Card.Title>{serie.name}</Card.Title>
+                <Card.Title>{movie.name}</Card.Title>
                 <Card.Subtitle className="year">{releaseYear}</Card.Subtitle>
-                <Link to={`/series/${serie.id}`}>
-                  <button className="card_button01">
+                <Link to={`/series/${movie.id}`}>
+                  <button
+                    className="PlayButtonCard"
+                    onClick={handleScrollToTop}
+                  >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="19"
@@ -77,4 +83,4 @@ const TopRatedSeries = () => {
   );
 };
 
-export default TopRatedSeries;
+export default AllTv;

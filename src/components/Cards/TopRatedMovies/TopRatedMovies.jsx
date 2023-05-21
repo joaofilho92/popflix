@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Card from "react-bootstrap/Card";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "../PopularMovies/Popular.css";
+import "./TopRatedMovies.css";
 import Box from "@mui/material/Box";
 
 const TopRatedMovies = () => {
@@ -16,14 +16,14 @@ const TopRatedMovies = () => {
   }, []);
 
   return (
-    <div className="p-5 tp1">
-      <h1 className="title3">Top Rated Movies</h1>
+    <div className="p-5 first_01">
+      <h1 className="title_01">Top Rated Movies</h1>
       <Box
         sx={{
           width: 70,
           height: 5,
         }}
-        className="box"
+        className="box_01"
       />
       <div className="image-container d-flex justify-content-center flex-wrap mt-4">
         {TopRatedMovies.map((movie) => {
@@ -32,13 +32,13 @@ const TopRatedMovies = () => {
             <Card className="movie-card mx-1 my-2">
               <Card.Img
                 variant="top"
-                className="card1"
+                className="card_01"
                 src={`https://image.tmdb.org/t/p/original${
                   movie && movie.poster_path
                 }`}
               />
               <Card.Body className="card-body">
-                <Card.Title className="title4">
+                <Card.Title className="title_02">
                   {movie.vote_average}{" "}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

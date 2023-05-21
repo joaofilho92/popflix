@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Card from "react-bootstrap/Card";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "../PopularMovies/Popular.css";
+import "./PopularSeries.css";
+import { Link } from "react-router-dom";
 import Box from "@mui/material/Box";
 
 const PopularSeries = () => {
@@ -16,14 +17,14 @@ const PopularSeries = () => {
   }, []);
 
   return (
-    <div className="p-5 tp1">
-      <h1 className="title3">Popular Series</h1>
+    <div className="p-5 first_01">
+      <h1 className="title_01">Popular Series</h1>
       <Box
         sx={{
           width: 70,
           height: 5,
         }}
-        className="box"
+        className="box_01"
       />
       <div className="image-container d-flex justify-content-center flex-wrap mt-4">
         {popularSeries.map((serie) => {
@@ -32,13 +33,13 @@ const PopularSeries = () => {
             <Card className="movie-card mx-1 my-2">
               <Card.Img
                 variant="top"
-                className="card1"
+                className="card_01"
                 src={`https://image.tmdb.org/t/p/original${
                   serie && serie.poster_path
                 }`}
               />
               <Card.Body className="card-body">
-                <Card.Title className="title4">
+                <Card.Title className="title_02">
                   {serie.vote_average}{" "}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -53,18 +54,20 @@ const PopularSeries = () => {
                 </Card.Title>
                 <Card.Title>{serie.name}</Card.Title>
                 <Card.Subtitle className="year">{releaseYear}</Card.Subtitle>
-                <button className="card_button01">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="19"
-                    height="19"
-                    fill="white"
-                    class="bi bi-play-fill"
-                    viewBox="0 0 16 16"
-                  >
-                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z" />
-                  </svg>
-                </button>
+                <Link to={`/series/${serie.id}`}>
+                  <button className="card_button02">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="19"
+                      height="19"
+                      fill="white"
+                      className="bi bi-play-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z" />
+                    </svg>
+                  </button>
+                </Link>
               </Card.Body>
             </Card>
           );
