@@ -1,0 +1,185 @@
+/* Imports */
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 700;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 800;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 500;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff) format('woff')
+}
+
+/* CSS */
+
+.posterImage {
+  position: relative;
+  height: 490px;
+  margin: auto;
+  display: block;
+}
+
+.posterImage img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  opacity: 1;
+  filter: brightness(50%);
+  box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.75);
+  transition: clip-path 0.5s ease-out;
+}
+
+.posterImage::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 90px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+}
+
+.movie-details {
+  position: relative;
+  top: -390px; /* ajuste o valor de acordo com a altura da imagem do banner */
+  left: 0;
+  z-index: 10; /* deve ser maior que a z-index da imagem do banner */
+  color: white;
+  font-family: 'Netflix Sans';
+}
+
+.movie_title{
+    font-size: 5rem;
+    color: white;
+}
+
+.release-year {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.vote-average {
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.genre{
+  color: white;
+  margin-left: 25px;
+  border: 1px solid #a70099;
+  padding: 5px;
+  background-color: #a70099;
+}
+
+.imgActor{
+  height: 70%;
+  width: 100%;
+}
+
+.Title_01{
+  color: white;
+  font-family: 'Netflix Sans';
+  font-size: 1.7rem;
+}
+
+.postersize{
+  height: 100%;
+}
+
+.video-list {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+}
+
+.vid01{
+  height: 600px;
+  padding: 30px;
+}
+
+.video-section{
+  height: 680px;
+}
+
+.title_03{
+  color: white;
+  font-family: 'Netflix Sans';
+  font-size: 1.7rem;
+}
+
+.author_review{
+  font-size: 1rem;
+  color: #a70099;
+}
+
+.review_content{
+  font-size: 13px;
+}
+
+.review-form{
+  margin-top: 10px;
+}
+
+.review_01{
+  color: #a70099;
+  font-family: 'Netflix Sans';
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+.coment_form{
+  background-color: transparent;
+  border: 1px solid rgb(141, 141, 141);
+  width: 100%;   
+  background-color: rgb(51,51,51);
+  font-size: 18px;
+  color: rgb(175, 175, 175);
+  text-indent: 12px;
+}
+
+.coment_form::placeholder {
+  color: rgb(175, 175, 175);
+  font-size: 18px;
+  text-indent: 12px;
+  font-family: 'Netflix Sans';
+}
+
+.coment_form:hover {
+  border-color: #a70099; 
+}
+
+.btn_05{
+  background-color:  #a70099;
+  margin-top: 15px;
+  font-family: 'Netflix Sans';
+  border-radius: 2%;
+  border: none;
+  width: 100px;
+  height: 40px;
+  color: white;
+}
+
+.btn_05:hover{
+  background-color:  #79016f;
+  margin-top: 15px;
+  font-weight: 500;
+}
+.btn_05:active{
+  background-color:  #79016f;
+}
+
+.review-section{
+  margin-bottom: -400px;
+}

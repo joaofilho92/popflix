@@ -19,18 +19,18 @@ function App() {
       <ToastContainer theme="dark" autoClose="1000"></ToastContainer>
       <Router>
         <Routes>
-          <Route path="/" element={<LoginPage />} />
-          <Route path="/RegisterPage" element={<RegisterPage />} />
-          <Route path="/Home" element={<Home />} />
-          <Route path="/Movie" element={<Movie />} />
-          <Route path="/TvSeries" element={<TvSeries />} />
-          <Route path="/Search" element={<SearchPage />} />
-          <Route path="/series/:id" element={<SerieDetails />} />
-          <Route path="/movies/:id" component={<MovieDetail/>} />
+          <Route path="/" element={<LoginPage/>} />
+          <Route path="/RegisterPage" element={<RegisterPage/>} />
+          <Route path="/Home" element={<Home/>} />
+          <Route path="/Movie" element={<Movie/>} />
+          <Route path="/TvSeries" element={<TvSeries/>} />
+          <Route path="/Search" element={<SearchPage/>} />
+          <Route path="/series/:id" element={<SerieDetails/>} />
+          <Route path="/movies/:id" element={<MovieDetail/>} />
         </Routes>
       </Router>
     </>
-  );
+  );  
 }
 
 export default App;

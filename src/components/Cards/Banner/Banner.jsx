@@ -30,7 +30,7 @@ const Banner = () => {
           {popularMovies.map((movie) => (
             <Link
               style={{ textDecoration: "none", color: "white" }}
-              to={`/movie/${movie.id}`}
+              to={`/movies/${movie.id}`}
             >
               <div className="posterImage">
                 <img

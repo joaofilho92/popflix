@@ -1,78 +1,78 @@
 import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./MovieDetail.css";
 import MyNav from "../../components/MyNav/MyNav";
 import MyFooter from "../../components/MyFooter/MyFooter";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import AlsoLike from "../../components/Detail/AlsoLike/AlsoLike";
 import Box from "@mui/material/Box";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import "./MovieDetail.css";
+import AlsoLike from "../../components/Detail/AlsoLike/AlsoLike";
 
-const SerieDetails = () => {
+const MovieDetails = () => {
   const { id } = useParams();
-  const [serie, setSerie] = useState(null);
+  const [movie, setMovie] = useState(null);
   const [cast, setCast] = useState(null);
   const [videos, setVideos] = useState(null);
   const [reviews, setReviews] = useState([]);
 
   useEffect(() => {
     fetch(
-      `https://api.themoviedb.org/3/tv/${id}?api_key=d08dca53e8c642f369801f9213d0eb94&language=en-US`
+      `https://api.themoviedb.org/3/movie/${id}?api_key=d08dca53e8c642f369801f9213d0eb94&language=en-US`
     )
       .then((res) => res.json())
-      .then((data) => setSerie(data));
+      .then((data) => setMovie(data));
 
     fetch(
-      `https://api.themoviedb.org/3/tv/${id}/credits?api_key=d08dca53e8c642f369801f9213d0eb94&language=en-US`
+      `https://api.themoviedb.org/3/movie/${id}/credits?api_key=d08dca53e8c642f369801f9213d0eb94&language=en-US`
     )
       .then((res) => res.json())
       .then((data) => setCast(data.cast));
 
     fetch(
-      `https://api.themoviedb.org/3/tv/${id}/videos?api_key=d08dca53e8c642f369801f9213d0eb94&language=en-US`
+      `https://api.themoviedb.org/3/movie/${id}/videos?api_key=d08dca53e8c642f369801f9213d0eb94&language=en-US`
     )
       .then((res) => res.json())
       .then((data) => setVideos(data.results));
 
     fetch(
-      `https://api.themoviedb.org/3/tv/${id}/reviews?api_key=d08dca53e8c642f369801f9213d0eb94&language=en-US`
+      `https://api.themoviedb.org/3/movie/${id}/reviews?api_key=d08dca53e8c642f369801f9213d0eb94&language=en-US`
     )
       .then((res) => res.json())
       .then((data) => setReviews(data.results));
   }, [id]);
 
-  if (!serie || !cast || !videos || !reviews) {
+  if (!movie || !cast || !videos || !reviews) {
     return <div>Loading...</div>;
   }
 
-  const releaseYear = serie.first_air_date.slice(0, 4);
-  const voteAverage = Math.floor(serie.vote_average);
+  const releaseYear = movie.release_date.slice(0, 4);
+  const voteAverage = Math.floor(movie.vote_average);
 
   return (
     <>
       <MyNav />
-      {serie.backdrop_path && (
+      {movie.backdrop_path && (
         <div className="posterImage with-shadow">
           <img
-            src={`https://image.tmdb.org/t/p/w1280${serie.backdrop_path}`}
+            src={`https://image.tmdb.org/t/p/w1280${movie.backdrop_path}`}
             alt="banner"
             className="img_02"
           />
         </div>
       )}
-      <div className="container my-5 serie-details">
+      <div className="container my-5 movie-details">
         <div className="row totale">
           <div className="col-md-4 postersize">
             <img
-              src={`https://image.tmdb.org/t/p/w500${serie.poster_path}`}
+              src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
               alt="poster"
               className="img-fluid"
             />
           </div>
           <div className="col-md-8">
-            <h1 className="serie_title">{serie.name}</h1>
+            <h1 className="movie_title">{movie.title}</h1>
             <p>
               <span className="release-year">{releaseYear}</span>
               <span className="vote-average">
@@ -88,13 +88,13 @@ const SerieDetails = () => {
                   <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
                 </svg>
               </span>
-              {serie.genres.map((genre) => (
+              {movie.genres.map((genre) => (
                 <span key={genre.id} className="genre">
                   {genre.name}
                 </span>
               ))}
             </p>
-            <p>{serie.overview}</p>
+            <p>{movie.overview}</p>
             <div className="row cast-section">
               <h2 className="Title_01">
                 Cast
@@ -188,10 +188,10 @@ const SerieDetails = () => {
           </div>
         </div>
       </div>
-      <AlsoLike />
+      <AlsoLike movieId={id} />
       <MyFooter />
     </>
   );
 };
 
-export default SerieDetails;
+export default MovieDetails;

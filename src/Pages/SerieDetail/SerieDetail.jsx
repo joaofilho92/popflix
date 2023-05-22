@@ -5,10 +5,10 @@ import "./SerieDetail.css";
 import MyNav from "../../components/MyNav/MyNav";
 import MyFooter from "../../components/MyFooter/MyFooter";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import AlsoLike from "../../components/Detail/AlsoLike/AlsoLike";
 import Box from "@mui/material/Box";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import SerieAlsoLike from "../../components/Detail/SerieAlsoLike/SerieAlsoLike";
 
 const SerieDetails = () => {
   const { id } = useParams();
@@ -188,7 +188,7 @@ const SerieDetails = () => {
           </div>
         </div>
       </div>
-      <AlsoLike />
+      <SerieAlsoLike seriesId={id}/>
       <MyFooter />
     </>
   );
