@@ -49,7 +49,7 @@ const SearchPage = () => {
         </form>
         <div className="image-container d-flex mt-4 ">
           {media.length > 0 ? (
-            <div className="container ">
+            <div className="container  ">
               <div className="grid grd1">
                 {media.map((mediaReq) => (
                   <MovieBox key={mediaReq.id} {...mediaReq} />
@@ -57,7 +57,7 @@ const SearchPage = () => {
               </div>
             </div>
           ) : (
-            <h2>Sorry !! No Movies or TV Shows Found</h2>
+            <h2 className="text-center">Sorry! No Movies or TV Shows Found</h2>
           )}
         </div>
       </Container>

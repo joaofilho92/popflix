@@ -12,10 +12,7 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 function MyFooter() {
   return (
     <>
-      <MDBFooter
-        className="text-center text-white Myfooter cont3"
-        
-      >
+      <MDBFooter className="text-center text-white Myfooter cont3">
         <MDBContainer className="pt-4 cont3">
           <section className="mb-4 cont3">
             <MDBBtn
@@ -24,55 +21,7 @@ function MyFooter() {
               floating
               size="lg"
               className="text-dark m-1"
-              href="#!"
-              role="button"
-            >
-              <MDBIcon fab className="fab fa-facebook-f" />
-            </MDBBtn>
-
-            <MDBBtn
-              rippleColor="dark"
-              color="link"
-              floating
-              size="lg"
-              className="text-dark m-1"
-              href="#!"
-              role="button"
-            >
-              <MDBIcon fab className="fa-twitter" />
-            </MDBBtn>
-
-            <MDBBtn
-              rippleColor="dark"
-              color="link"
-              floating
-              size="lg"
-              className="text-dark m-1"
-              href="#!"
-              role="button"
-            >
-              <MDBIcon fab className="fa-google" />
-            </MDBBtn>
-
-            <MDBBtn
-              rippleColor="dark"
-              color="link"
-              floating
-              size="lg"
-              className="text-dark m-1"
-              href="#!"
-              role="button"
-            >
-              <MDBIcon fab className="fa-instagram" />
-            </MDBBtn>
-
-            <MDBBtn
-              rippleColor="dark"
-              color="link"
-              floating
-              size="lg"
-              className="text-dark m-1"
-              href="#!"
+              href="https://www.linkedin.com/in/joao-batista-sviluppatorefrontend/"
               role="button"
             >
               <MDBIcon fab className="fa-linkedin" />
@@ -84,7 +33,7 @@ function MyFooter() {
               floating
               size="lg"
               className="text-dark m-1"
-              href="#!"
+              href="https://github.com/joaofilho92"
               role="button"
             >
               <MDBIcon fab className="fa-github" />
