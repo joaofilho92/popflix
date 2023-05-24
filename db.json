@@ -38,9 +38,11 @@
   ],
   "reviews": [
     {
+      "movieId": "12345",
       "author": "Joao",
       "content": "Otimo filme",
       "id": 1
     }
-  ]
+  ],
+  "comments": []
 }

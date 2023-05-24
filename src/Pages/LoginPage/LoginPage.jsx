@@ -2,63 +2,63 @@ import "./LoginPage.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { toast } from "react-toastify"
+import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const LoginPage = () => {
-
   const [username, usernameupdate] = useState("");
   const [password, passwordupdate] = useState("");
 
   const usenavigate = useNavigate();
 
-  useEffect(()=>{
-  sessionStorage.clear(); 
-  },[]);
+  useEffect(() => {
+    sessionStorage.clear();
+  }, []);
 
   const ProceedLogin = (e) => {
     e.preventDefault();
 
-    if(validate()){
+    if (validate()) {
       //teste
       //console.log("continue");
-      fetch("http://localhost:3000/user/"+username).then((res)=>{
-        return res.json();
-      }).then((resp)=>{
-        //console.log(resp)
-        if(Object.keys(resp).length===0){
-          toast.error("Inserisci un'e-mail valida");
-        }else {
-        if(resp.password===password){
-        toast.success('Success');
-        sessionStorage.setItem('username',username);
-        usenavigate("/Home");
-        }else{
-          toast.error("Inserisci una password valida");
-        }
-        }
-      }).catch((err)=>{
-        toast.error("Accesso non riuscito per :" + err.message);
-      })
+      fetch("http://localhost:3000/user/" + username)
+        .then((res) => {
+          return res.json();
+        })
+        .then((resp) => {
+          //console.log(resp)
+          if (Object.keys(resp).length === 0) {
+            toast.error("Inserisci un'e-mail valida");
+          } else {
+            if (resp.password === password) {
+              toast.success("Success");
+              sessionStorage.setItem("username", username);
+              usenavigate("/Home");
+            } else {
+              toast.error("Inserisci una password valida");
+            }
+          }
+        })
+        .catch((err) => {
+          toast.error("Accesso non riuscito per :" + err.message);
+        });
     }
-  }
+  };
 
-  const validate=()=>{
-    let result=true;
-    if(username === '' || username === null){
-      result=false;
+  const validate = () => {
+    let result = true;
+    if (username === "" || username === null) {
+      result = false;
       toast.warning("Inserire un indirizzo email");
     }
-      if (password === "" || password === null) {
-        result = false;
-        toast.warning("Inserire una password");
-      }
+    if (password === "" || password === null) {
+      result = false;
+      toast.warning("Inserire una password");
+    }
     return result;
-  }
-
+  };
 
   return (
-
     <div className="cont1">
       <div className="form1 position-absolute top-50 start-50 translate-middle">
         <h1 className="p-5 mt-1 title">Accedi</h1>

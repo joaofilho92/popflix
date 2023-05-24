@@ -90,5 +90,33 @@ body{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 2%;
+  margin-bottom: 170px;
 }
+/* 
+---- */
+
+
+.title_01 {
+  color: white;
+  font-family: "Netflix Sans";
+  font-size: 1.7rem; 
+}
+
+.box_01 {
+  background-color: #a70099;
+  margin-top: -3px;
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card_01 {
+  width: 15rem;
+  object-fit: cover;
+  height: 350px;
+  border-radius: 0; 
+}
+
 
