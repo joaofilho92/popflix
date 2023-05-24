@@ -46,7 +46,7 @@ function RegisterPage() {
       let regobj = { id, name, password };
       //console.log(regobj);
 
-      fetch("http://localhost:3000/user", {
+      fetch("http://localhost:5000/user", {
         method: "POST",
         headers: { "content-type": "application/json" },
         body: JSON.stringify(regobj),

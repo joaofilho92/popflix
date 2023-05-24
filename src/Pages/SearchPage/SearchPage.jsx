@@ -84,8 +84,8 @@ const SearchPage = () => {
             </div>
           </div>
         </div>
-        <MyFooter />
       </Container>
+      <MyFooter />
     </div>
   );
 };
