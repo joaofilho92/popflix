@@ -11,7 +11,7 @@ const AllMovies = () => {
 
   useEffect(() => {
     fetch(
-      `https://api.themoviedb.org/3/discover/movie?api_key=d08dca53e8c642f369801f9213d0eb94&language=en-US&page=${currentPage}`
+      `https://api.themoviedb.org/3/discover/movie?include_adult=false&api_key=d08dca53e8c642f369801f9213d0eb94&language=en-US&page=${currentPage}`
     )
       .then((res) => res.json())
       .then((data) =>

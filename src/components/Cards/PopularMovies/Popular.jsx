@@ -11,7 +11,7 @@ const Popular = () => {
 
      useEffect(() => {
        fetch(
-         "https://api.themoviedb.org/3/movie/popular?api_key=d08dca53e8c642f369801f9213d0eb94&language=en-US"
+         "https://api.themoviedb.org/3/movie/popular?include_adult=false&api_key=d08dca53e8c642f369801f9213d0eb94&language=en-US"
        )
          .then((res) => res.json())
          .then((data) => setPopularMovies(data.results.slice(0, 5)));

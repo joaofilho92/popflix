@@ -11,7 +11,7 @@ const AllTv = () => {
 
   useEffect(() => {
     fetch(
-      `https://api.themoviedb.org/3/discover/tv?api_key=d08dca53e8c642f369801f9213d0eb94&language=en-US&page=${currentPage}`
+      `https://api.themoviedb.org/3/discover/tv?include_adult=false&api_key=d08dca53e8c642f369801f9213d0eb94&language=en-US&page=${currentPage}`
     )
       .then((res) => res.json())
       .then((data) =>

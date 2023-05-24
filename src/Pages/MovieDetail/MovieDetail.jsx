@@ -68,7 +68,7 @@ const MovieDetails = () => {
             <img
               src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
               alt="poster"
-              className="img-fluid"
+              className="img-fluid movie_poster"
             />
           </div>
           <div className="col-md-8">
@@ -94,7 +94,7 @@ const MovieDetails = () => {
                 </span>
               ))}
             </p>
-            <p>{movie.overview}</p>
+            <p className="overview_01">{movie.overview}</p>
             <div className="row cast-section">
               <h2 className="Title_01">
                 Cast

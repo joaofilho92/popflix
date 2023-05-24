@@ -94,7 +94,7 @@ const SerieDetails = () => {
                 </span>
               ))}
             </p>
-            <p>{serie.overview}</p>
+            <p className="overview_01">{serie.overview}</p>
             <div className="row cast-section">
               <h2 className="Title_01">
                 Cast
@@ -188,7 +188,7 @@ const SerieDetails = () => {
           </div>
         </div>
       </div>
-      <SerieAlsoLike seriesId={id}/>
+      <SerieAlsoLike seriesId={id} />
       <MyFooter />
     </>
   );

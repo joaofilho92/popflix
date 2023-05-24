@@ -35,5 +35,12 @@
       "name": "test",
       "password": "123"
     }
+  ],
+  "reviews": [
+    {
+      "author": "Joao",
+      "content": "Otimo filme",
+      "id": 1
+    }
   ]
 }
