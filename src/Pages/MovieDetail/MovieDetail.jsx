@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import MyNav from "../../components/MyNav/MyNav";
 import MyFooter from "../../components/MyFooter/MyFooter";

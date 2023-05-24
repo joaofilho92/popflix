@@ -10,11 +10,11 @@ import { useEffect } from "react";
 const MyNav = () => {
   const usenavigate=useNavigate();
   useEffect(() => {
-    let username=sessionStorage.getItem('username');
-    if (username==='' || username === null){
-      usenavigate('/');
+    let username = sessionStorage.getItem("username");
+    if (username === "" || username === null) {
+      usenavigate("/");
     }
-  },[]);
+  }, [usenavigate]);
       
   return (
     <Navbar expand="lg" className="Navb ">
