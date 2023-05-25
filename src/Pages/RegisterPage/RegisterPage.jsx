@@ -44,7 +44,7 @@ function RegisterPage() {
     if (IsValidate()) {
       e.preventDefault();
       let regobj = { id, name, password };
-      //console.log(regobj);
+
 
       fetch("http://localhost:5000/user", {
         method: "POST",

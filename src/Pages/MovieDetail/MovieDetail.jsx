@@ -36,19 +36,39 @@ const MovieDetails = () => {
       .then((res) => res.json())
       .then((data) => setVideos(data.results));
 
-    fetch(
-      `https://api.themoviedb.org/3/movie/${id}/reviews?api_key=d08dca53e8c642f369801f9213d0eb94&language=en-US`
-    )
+    fetch(`http://localhost:5000/comments`)
       .then((res) => res.json())
-      .then((data) => setReviews(data.results));
+      .then((data) => data ? data.filter((comment)=> comment.movieId === id):[])
+      .then((data) => setReviews(data));
   }, [id]);
 
-  if (!movie || !cast || !videos || !reviews) {
+  if (!movie || !cast || !videos) {
     return <div>Loading...</div>;
   }
 
   const releaseYear = movie.release_date.slice(0, 4);
   const voteAverage = Math.floor(movie.vote_average);
+
+  function createReview (event){
+    event.preventDefault();
+    const content = event.target[0].value
+    const author = sessionStorage.getItem('username')
+    const review = {movieId:id, author:author, content:content}
+
+    fetch("http://localhost:5000/comments", {
+      method: "post",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+
+
+      body: JSON.stringify(review),
+    });
+    window.location.reload();
+  }
+
+
 
   return (
     <>
@@ -167,21 +187,21 @@ const MovieDetails = () => {
               />
             </h2>
             <div className="review-list">
-              {reviews.slice(0, 3).map((review) => (
+              {reviews.map((review) => (
                 <div key={review.id} className="review-item mt-5">
                   <h3 className="author_review">{review.author}</h3>
                   <p className="review_content">{review.content}</p>
                 </div>
               ))}
             </div>
-            <form className="review-form">
+            <form className="review-form" onSubmit={createReview}>
               <h3 className="review_01">Write a Review</h3>
               <textarea
                 rows="4"
                 placeholder="Write your review here..."
                 className="coment_form"
               ></textarea>
-              <button type="submit" className="btn_05">
+              <button type="submit"  className="btn_05">
                 Submit
               </button>
             </form>

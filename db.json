@@ -44,5 +44,84 @@
       "id": 1
     }
   ],
-  "comments": []
+  "comments": [
+    {
+      "movieId": "603692",
+      "author": "name",
+      "content": "asdaqweqwesad",
+      "id": 1
+    },
+    {
+      "movieId": "603692",
+      "author": "name",
+      "content": "sijduasdioaushda",
+      "id": 2
+    },
+    {
+      "movieId": "603692",
+      "author": "name",
+      "content": "0318h18h1038",
+      "id": 3
+    },
+    {
+      "movieId": "1076605",
+      "author": "name",
+      "content": "TOp demais",
+      "id": 4
+    },
+    {
+      "movieId": "603692",
+      "author": "ds",
+      "content": "TEste010101",
+      "id": 5
+    },
+    {
+      "movieId": "603692",
+      "author": "ds",
+      "content": "TEste010101",
+      "id": 6
+    },
+    {
+      "movieId": "603692",
+      "author": "ds",
+      "content": "TEste010101",
+      "id": 7
+    },
+    {
+      "movieId": "603692",
+      "author": "ds",
+      "content": "TEste010101",
+      "id": 8
+    },
+    {
+      "movieId": "603692",
+      "author": "ds",
+      "content": "TEste010101",
+      "id": 9
+    },
+    {
+      "movieId": "603692",
+      "author": "ds",
+      "content": "uhasudahs01010101",
+      "id": 10
+    },
+    {
+      "movieId": "603692",
+      "author": "ds",
+      "content": "Review0101010",
+      "id": 11
+    },
+    {
+      "movieId": "216390",
+      "author": "ds",
+      "content": "teste001",
+      "id": 12
+    },
+    {
+      "movieId": "216390",
+      "author": "ds",
+      "content": "teste3",
+      "id": 13
+    }
+  ]
 }

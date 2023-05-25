@@ -19,20 +19,17 @@ const LoginPage = () => {
     e.preventDefault();
 
     if (validate()) {
-      //teste
-      //console.log("continue");
       fetch("http://localhost:5000/user/" + username)
         .then((res) => {
           return res.json();
         })
         .then((resp) => {
-          //console.log(resp)
           if (Object.keys(resp).length === 0) {
             toast.error("Inserisci un'e-mail valida");
           } else {
             if (resp.password === password) {
               toast.success("Success");
-              sessionStorage.setItem("username", username);
+              sessionStorage.setItem("username", resp.name);
               usenavigate("/Home");
             } else {
               toast.error("Inserisci una password valida");
