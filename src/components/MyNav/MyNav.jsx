@@ -1,25 +1,25 @@
 import Container from "react-bootstrap/Container";
-import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./MyNav.css";
-import { Link, useNavigate } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 
 const MyNav = () => {
-  const usenavigate=useNavigate();
+  const navigate = useNavigate();
+
   useEffect(() => {
     let username = sessionStorage.getItem("username");
     if (username === "" || username === null) {
-      usenavigate("/");
+      navigate("/");
     }
-  }, [usenavigate]);
-      
+  }, [navigate]);
+
   return (
-    <Navbar expand="lg" className="Navb ">
+    <Navbar expand="lg" className="Navb">
       <Container fluid className="ms-5">
-        <Link to={"/Home"} className="text-light ">
+        <Link to="/Home" className="text-light">
           <img
             src="/img/PopFlix2.png"
             className="img1"
@@ -34,38 +34,40 @@ const MyNav = () => {
             style={{ maxHeight: "100px" }}
             navbarScroll
           >
-            <Nav.Link href="#action1" className="text-light navMenu">
-              <Link to={"/Home"} className="text-light ">
+            <Nav.Item className="navMenu">
+              <Nav.Link as={Link} to="/Home" className="text-light">
                 Home
-              </Link>
-            </Nav.Link>
-            <Nav.Link href="#action2" className="text-light navMenu">
-              <Link to={"/Movie"} className="text-light ">
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item className="navMenu">
+              <Nav.Link as={Link} to="/Movie" className="text-light">
                 Movie
-              </Link>
-            </Nav.Link>
-            <Nav.Link href="#action2" className="text-light navMenu">
-              <Link to={"/TvSeries"} className="text-light ">
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item className="navMenu">
+              <Nav.Link as={Link} to="/TvSeries" className="text-light">
                 TvSeries
-              </Link>
-            </Nav.Link>
-            <Nav.Link href="#action2" className="text-light navMenu">
-              <Link to={"/Search"} className="text-light">
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item className="navMenu">
+              <Nav.Link as={Link} to="/Search" className="text-light">
                 Search
-              </Link>
-            </Nav.Link>
+              </Nav.Link>
+            </Nav.Item>
           </Nav>
-          <Form className="d-flex mx-5">
-            <button type="button" className="btn btn4 text-light">
-              <Link to={"/"} className="text-light ">
-                Logout
-              </Link>
-            </button>
-          </Form>
+          <Nav className="d-flex mx-5">
+            <Nav.Item>
+              <button type="button" className="btn btn4 text-light">
+                <Link to="/" className="text-light">
+                  Logout
+                </Link>
+              </button>
+            </Nav.Item>
+          </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
   );
-}
+};
 
 export default MyNav;

@@ -78,20 +78,20 @@ const MovieDetails = () => {
           <img
             src={`https://image.tmdb.org/t/p/w1280${movie.backdrop_path}`}
             alt="banner"
-            className="img_02"
+            className="img_02 img-fluid"
           />
         </div>
       )}
       <div className="container my-5 movie-details">
         <div className="row totale">
-          <div className="col-md-4 postersize">
+          <div className="col-lg-4 col-md-6 col-sm-12 postersize">
             <img
               src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
               alt="poster"
               className="img-fluid movie_poster"
             />
           </div>
-          <div className="col-md-8">
+          <div className="col-lg-8 col-md-6 col-sm-12">
             <h1 className="movie_title">{movie.title}</h1>
             <p>
               <span className="release-year">{releaseYear}</span>
@@ -201,7 +201,7 @@ const MovieDetails = () => {
                 placeholder="Write your review here..."
                 className="coment_form"
               ></textarea>
-              <button type="submit"  className="btn_05">
+              <button type="submit" className="btn_05">
                 Submit
               </button>
             </form>
