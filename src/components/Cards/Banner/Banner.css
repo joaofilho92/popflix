@@ -78,3 +78,12 @@
     text-align: left;
     width: 50%;
 }
+
+.genre{
+    color: white;
+    font-size: 1.3rem;
+    margin-left: 25px;
+    border: 1px solid #a70099;
+    padding: 5px;
+    background-color: #a70099;
+}
