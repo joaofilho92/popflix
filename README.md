@@ -16,7 +16,7 @@ risparmiare tempo quando si va a scegliere il prossimo film da guardare sulla tu
 # Features 🚀:
 
 - Sign up / Sign in
-- Write review for movie (Delete review)
+- Write review for movie 
 - Search movies / tv series
 - Personalized indications
 
