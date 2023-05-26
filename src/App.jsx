@@ -14,7 +14,7 @@ import MovieDetail from './Pages/MovieDetail/MovieDetail';
 
 function App() {
   return (
-    // Rotas
+    // Routes
     <>
       <ToastContainer theme="dark" autoClose="1000"></ToastContainer>
       <Router>

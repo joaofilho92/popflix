@@ -72,7 +72,7 @@ const SerieDetails = () => {
 
   return (
     <>
-      <MyNav />
+      <MyNav/>
       {serie.backdrop_path && (
         <div className="posterImage with-shadow">
           <img
