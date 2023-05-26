@@ -25,7 +25,7 @@
 
 .cont1 {
   margin: 0;
-  /* background-image: url("/public/img/background.jpg"); */
+  background-image: url("/public/img/4218996.jpg");
   background-color: black;
   width: 100vw;
   height: 100vh;
@@ -36,7 +36,7 @@
 .form1 {
     width: 420px;
     height: 480px;
-    background-color: rgb(13,13,13);
+    background-color: rgba(13, 13, 13, 0.918);
     border-radius: 1%;
 }
 
