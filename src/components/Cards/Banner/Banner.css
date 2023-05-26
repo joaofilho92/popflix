@@ -53,7 +53,7 @@
 
 .posterImage__title {
     font-weight: 900;
-    font-family: 'Netflix Sans';
+    font-family: 'Netflix Sans', 'Roboto', sans-serif;
     font-size: 3rem;
     margin-bottom: 0.4rem;
     text-align: left;
@@ -62,16 +62,16 @@
 .posterImage__runtime {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    font-family: 'Netflix Sans';
+    font-family: 'Netflix Sans', 'Roboto', sans-serif;
 }
 
 .posterImage__rating {
     margin-left: 1rem;
-    font-family: 'Netflix Sans';
+    font-family: 'Netflix Sans', 'Roboto', sans-serif;
 }
 
 .posterImage__description {
-    font-family: 'Netflix Sans';
+    font-family: 'Netflix Sans', 'Roboto', sans-serif;
     font-size: 0.8rem;
     margin-bottom: 0.25rem;
     display: flex;

@@ -25,7 +25,7 @@
 
 .title_01{
     color: white;
-    font-family: 'Netflix Sans', Arial, Helvetica, sans-serif;
+    font-family: 'Netflix Sans', 'Roboto', sans-serif;
     font-size: 1.7rem;
 }
 
@@ -35,8 +35,8 @@
 }
 
 .image-container {
-  display: flex;
-  flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .card_01{

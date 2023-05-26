@@ -25,7 +25,7 @@
 
 .title_01{
     color: white;
-    font-family: 'Netflix Sans';
+    font-family: 'Netflix Sans', 'Roboto', sans-serif;
     font-size: 1.7rem;
 }
 
@@ -35,8 +35,8 @@
 }
 
 .image-container {
-  display: flex;
-  flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .card_01{
@@ -66,7 +66,7 @@
     background: #0d0d0ea4;
     color: white;
     padding: 30px;
-    font-family: 'Netflix Sans';
+    font-family: 'Netflix Sans', 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -76,8 +76,8 @@
 }
 
 .movie-card:hover .card-body {
-  visibility: visible;
-  opacity: 1;
+    visibility: visible;
+    opacity: 1;
 }
 
 .year{

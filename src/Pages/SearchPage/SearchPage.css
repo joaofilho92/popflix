@@ -28,7 +28,7 @@ body{
 .headstyle{
     font-weight: bold;
     font-size: 23px;
-    font-family: 'Netflix Sans';
+    font-family: 'Netflix Sans', 'Roboto', sans-serif;
     text-align: center;
     margin-top: 25px;
     margin-bottom: 20px;
@@ -46,77 +46,74 @@ body{
 }
 
 .searchinp::placeholder {
-  color: rgb(175, 175, 175);
-  font-size: 18px;
-  text-indent: 12px;
-  font-family: 'Netflix Sans';
+    color: rgb(175, 175, 175);
+    font-size: 18px;
+    text-indent: 12px;
+    font-family: 'Netflix Sans', 'Roboto', sans-serif;
 }
 
 .searchinp:hover {
-  border-color: #a70099; 
+    border-color: #a70099; 
 }
 
 .searchinp:focus {
-  border-color: red; 
+    border-color: red; 
 }
 
 .btn5{
-  background-color:  #a70099;
-  margin-top: 15px;
-  font-family: 'Netflix Sans';
+    background-color:  #a70099;
+    margin-top: 15px;
+    font-family: 'Netflix Sans', 'Roboto', sans-serif;
 }
 
 .btn5:hover{
-  background-color:  #79016f;
-  margin-top: 15px;
-  font-weight: 500;
+    background-color:  #79016f;
+    margin-top: 15px;
+    font-weight: 500;
 }
 .btn5:active{
-  background-color:  #79016f;
+    background-color:  #79016f;
 }
 
 .movie-box {
-  width: 18%;
-  margin-right: 2%;
-  margin-bottom: 2%;
+    width: 18%;
+    margin-right: 2%;
+    margin-bottom: 2%;
 }
 
 .movie-box img {
-  max-width: 100%;
-  height: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 .grd1 {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 2%;
-  margin-bottom: 170px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2%;
+    margin-bottom: 170px;
 }
-/* 
----- */
-
 
 .title_01 {
-  color: white;
-  font-family: "Netflix Sans";
-  font-size: 1.7rem; 
+    color: white;
+    font-family: 'Netflix Sans', 'Roboto', sans-serif;
+    font-size: 1.7rem; 
 }
 
 .box_01 {
-  background-color: #a70099;
-  margin-top: -3px;
+    background-color: #a70099;
+    margin-top: -3px;
 }
 
 .image-container {
-  display: flex;
-  flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .card_01 {
-  width: 15rem;
-  object-fit: cover;
-  height: 350px;
-  border-radius: 0; 
+    width: 15rem;
+    object-fit: cover;
+    height: 350px;
+    border-radius: 0; 
 }
 
 

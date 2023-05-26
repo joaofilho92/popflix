@@ -28,13 +28,13 @@
     background-color: #131313;
     font-weight: bold;
     font-size: 17px;
-    font-family: 'Netflix Sans';
+    font-family: 'Netflix Sans', 'Roboto', sans-serif;
 }
 
 .btn4{
     font-weight: bold;
     margin-top: 0px;
-    font-family: 'Netflix Sans';
+    font-family: 'Netflix Sans', 'Roboto', sans-serif;
     color:white;
     height: 40px;
 }

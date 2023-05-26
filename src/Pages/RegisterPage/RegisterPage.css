@@ -24,13 +24,13 @@
 /* Form */
 
 .cont2 {
-  margin: 0;
-  background-color: black;
-  background-image: url("/public/img/4218996.jpg");
-  width: 100vw;
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
+    margin: 0;
+    background-color: black;
+    background-image: url("/public/img/4218996.jpg");
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
 }
 
 .form2 {
@@ -42,7 +42,7 @@
 
 .title{
     color: white;
-    font-family: 'Netflix Sans';
+    font-family: 'Netflix Sans', 'Roboto', sans-serif;
     font-size: 32px;
     font-weight: 500;
     margin-bottom: -100px;
@@ -60,28 +60,28 @@ input{
 }
 
 input::placeholder {
-  color: rgb(175, 175, 175);
-  font-size: 18px;
-  text-indent: 12px;
-  font-family: 'Netflix Sans';
+    color: rgb(175, 175, 175);
+    font-size: 18px;
+    text-indent: 12px;
+    font-family: 'Netflix Sans', 'Roboto', sans-serif;
 }
 
 .inp2{
     margin-bottom: 15px;
     margin-top: 40px;
-    font-family: 'Netflix Sans';
+    font-family: 'Netflix Sans', 'Roboto', sans-serif;
 }
 
 .inpt1{
-  margin-top: -90px;
+    margin-top: -90px;
 }
 
 .EmailUser{
-  margin-top: -1px;
+    margin-top: -1px;
 }
 
 .RiPass{
-  margin-top: 15px;
+    margin-top: 15px;
 }
 
 .btn1{
@@ -91,45 +91,45 @@ input::placeholder {
     background-color:  #a70099;
     border: none;
     outline: none;
-    font-family: 'Netflix Sans';
+    font-family: 'Netflix Sans', 'Roboto', sans-serif;
     color: white;
     font-size: 16px;
     cursor: pointer;
 }
 
 .btn1:hover{
-  color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
 }
 
 .ho3{
     color: rgb(199, 199, 199);
-    font-family: 'Netflix Sans';
+    font-family: 'Netflix Sans', 'Roboto', sans-serif;
     text-align: center;
     font-size: 15px;
 }
 
 .spn{
-  text-decoration: none;
-  color: white;
+    text-decoration: none;
+    color: white;
 }
 
 .spn:hover{
-  color: #E50914;
+    color: #E50914;
 }
 
 .checkbox{
-  width: 18px;
-  height: 18px;
-  border-radius: 4px;
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 4px;
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 4px;
 }
 
 .termini{
-  margin-left: 30px;
-  color: rgb(114, 114, 114);
-  margin-top: px;
-  font-family: 'Netflix Sans';
+    margin-left: 30px;
+    color: rgb(114, 114, 114);
+    margin-top: px;
+    font-family: 'Netflix Sans', 'Roboto', sans-serif;
 }
 

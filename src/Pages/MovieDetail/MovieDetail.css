@@ -24,182 +24,181 @@
 /* CSS */
 
 .posterImage {
-  position: relative;
-  height: 490px;
-  margin: auto;
-  display: block;
+    position: relative;
+    height: 490px;
+    margin: auto;
+    display: block;
 }
 
 .posterImage img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  opacity: 1;
-  filter: brightness(60%);
-  box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.75);
-  transition: clip-path 0.5s ease-out;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 1;
+    filter: brightness(60%);
+    box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.75);
+    transition: clip-path 0.5s ease-out;
 }
 
 .posterImage::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 90px;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 90px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
 }
 
 .movie-details {
-  position: relative;
-  top: -390px; /* ajuste o valor de acordo com a altura da imagem do banner */
-  left: 0;
-  z-index: 10; /* deve ser maior que a z-index da imagem do banner */
-  color: white;
-  font-family: 'Netflix Sans';
+    position: relative;
+    top: -390px; 
+    left: 0;
+    z-index: 10; 
+    color: white;
+    font-family: 'Netflix Sans', 'Roboto', sans-serif;
 }
 
 .movie_title{
-  font-size: 5rem;
-  color: white;
-  max-width: 750px; /* set the maximum width for the title */
-  overflow: hidden; /* cut off the text if it exceeds the maximum width */
-  white-space: nowrap; /* prevent line breaks within the title */
-  text-overflow: ellipsis; /* add an ellipsis at the end if the text is cut off */
+    font-size: 5rem;
+    color: white;
+    max-width: 750px; 
+    overflow: hidden; 
+    white-space: nowrap; 
+    text-overflow: ellipsis; 
 }
 
 .overview_01{
-  width: 100%;
-  height: 70px;
-  overflow: hidden;
-  white-space: pre-rap;
-  text-overflow: ellipsis;
-  max-height: 70px;
+    width: 100%;
+    height: 70px;
+    overflow: hidden;
+    white-space: pre-rap;
+    text-overflow: ellipsis;
+    max-height: 70px;
 }
 
 .release-year {
-  margin-right: 10px;
-  font-size: 20px;
+    margin-right: 10px;
+    font-size: 20px;
 }
 
 .vote-average {
-  margin-left: 10px;
-  font-size: 20px;
+    margin-left: 10px;
+    font-size: 20px;
 }
 
 .genre{
-  color: white;
-  margin-left: 25px;
-  border: 1px solid #a70099;
-  padding: 5px;
-  background-color: #a70099;
+    color: white;
+    margin-left: 25px;
+    border: 1px solid #a70099;
+    padding: 5px;
+    background-color: #a70099;
 }
 
 .imgActor{
-  height: 180px;
-  width: 150px;
-  margin-top: 5px;
+    height: 180px;
+    width: 150px;
+    margin-top: 5px;
 }
 
 .Title_01{
-  color: white;
-  font-family: 'Netflix Sans';
-  font-size: 1.7rem;
+    color: white;
+    font-family: 'Netflix Sans', 'Roboto', sans-serif;
+    font-size: 1.7rem;
 }
 
 .postersize{
-  object-fit: cover;
-  height: 100px;
-  width: 350px;
-  margin-bottom: 450px;
-  min-height: 100px;
-  max-height: 100px;
+    object-fit: cover;
+    height: 100px;
+    width: 350px;
+    margin-bottom: 450px;
+    min-height: 100px;
+    max-height: 100px;
 }
 
 .video-list {
-  display: flex;
-  flex-wrap: nowrap;
-  overflow-x: scroll;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
 }
 
 .vid01{
-  height: 600px;
-  padding: 30px;
+    height: 600px;
+    padding: 30px;
 }
 
 .video-section{
-  height: 680px;
+    height: 680px;
 }
 
 .title_03{
-  color: white;
-  font-family: 'Netflix Sans';
-  font-size: 1.7rem;
+    color: white;
+    font-family: 'Netflix Sans', 'Roboto', sans-serif;
+    font-size: 1.7rem;
 }
 
 .author_review{
-  font-size: 1rem;
-  color: #a70099;
+    font-size: 1rem;
+    color: #a70099;
 }
 
 .review_content{
-  font-size: 13px;
+    font-size: 13px;
 }
 
 .review-form{
-  margin-top: 10px;
+    margin-top: 10px;
 }
 
 .review_01{
-  color: #a70099;
-  font-family: 'Netflix Sans';
-  font-size: 1.7rem;
-  margin-bottom: 10px;
-  margin-top: 30px;
+    color: #a70099;
+    font-family: 'Netflix Sans', 'Roboto', sans-serif;
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+    margin-top: 30px;
 }
 
 .coment_form{
-  background-color: transparent;
-  border: 1px solid rgb(141, 141, 141);
-  width: 100%;   
-  background-color: rgb(51,51,51);
-  font-size: 18px;
-  color: rgb(175, 175, 175);
-  text-indent: 12px;
+    background-color: transparent;
+    border: 1px solid rgb(141, 141, 141);
+    width: 100%;   
+    background-color: rgb(51,51,51);
+    font-size: 18px;
+    color: rgb(175, 175, 175);
+    text-indent: 12px;
 }
 
 .coment_form::placeholder {
-  color: rgb(175, 175, 175);
-  font-size: 18px;
-  text-indent: 12px;
-  font-family: 'Netflix Sans';
+    color: rgb(175, 175, 175);
+    font-size: 18px;
+    text-indent: 12px;
+    font-family: 'Netflix Sans', 'Roboto', sans-serif;
 }
 
 .coment_form:hover {
-  border-color: #a70099; 
+    border-color: #a70099; 
 }
 
 .btn_05{
-  background-color:  #a70099;
-  margin-top: 15px;
-  font-family: 'Netflix Sans';
-  border-radius: 2%;
-  border: none;
-  width: 100px;
-  height: 40px;
-  color: white;
+    background-color:  #a70099;
+    margin-top: 15px;
+    font-family: 'Netflix Sans', 'Roboto', sans-serif;
+    border-radius: 2%;
+    border: none;
+    width: 100px;
+    height: 40px;
+    color: white;
 }
 
 .btn_05:hover{
-  background-color:  #79016f;
-  margin-top: 15px;
-  font-weight: 500;
+    background-color:  #79016f;
+    margin-top: 15px;
+    font-weight: 500;
 }
 .btn_05:active{
-  background-color:  #79016f;
+    background-color:  #79016f;
 }
 
 .review-section{
-  margin-bottom: -400px;
-  
+    margin-bottom: -400px;
 }
