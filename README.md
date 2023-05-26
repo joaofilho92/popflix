@@ -2,6 +2,10 @@
 
 # PopFlix 🎥
 
+# Demo 
+
+https://popflix-rho.vercel.app/
+
 # Obiettivo del progetto: 
 
 Creare un'applicazione in React che vada oltre l'essere una riproduzione di Netflix. 
