@@ -10,7 +10,7 @@ const AlsoLike = ({ movieId }) => {
 
   useEffect(() => {
     fetch(
-      `https://api.themoviedb.org/3/movie/${movieId}/recommendations?api_key=d08dca53e8c642f369801f9213d0eb94&language=en-US&page=1`
+      `https://api.themoviedb.org/3/movie/${movieId}/recommendations?include_adult=false&api_key=d08dca53e8c642f369801f9213d0eb94&language=en-US&page=1`
     )
       .then((res) => res.json())
       .then((data) => setRelatedMovies(data.results.slice(0, 5)));

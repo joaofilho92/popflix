@@ -34,6 +34,11 @@
       "id": "test@gmail.com",
       "name": "test",
       "password": "123"
+    },
+    {
+      "id": "jujubalor22@gmail.com",
+      "name": "Giulia",
+      "password": "Luan010718"
     }
   ],
   "reviews": [
@@ -128,6 +133,54 @@
       "author": "ds",
       "content": "Nice Movie",
       "id": 14
+    },
+    {
+      "movieId": "385687",
+      "author": "ds",
+      "content": "Me piace",
+      "id": 15
+    },
+    {
+      "movieId": "846214",
+      "author": "ds",
+      "content": "Me Piace",
+      "id": 16
+    },
+    {
+      "movieId": "603692",
+      "author": "Giulia",
+      "content": "o filho da puta sobrevive ao fim do mundo e morre no final sem um pingo de sentido \n",
+      "id": 17
+    },
+    {
+      "movieId": "603692",
+      "author": "Giulia",
+      "content": "perdi horas da minha vida",
+      "id": 18
+    },
+    {
+      "movieId": "603692",
+      "author": "Giulia",
+      "content": "mas em defesa do filme o marques é um gato \n",
+      "id": 19
+    },
+    {
+      "movieId": "1396",
+      "author": "Giulia",
+      "content": "esperava mais \n",
+      "id": 20
+    },
+    {
+      "movieId": "60625",
+      "author": "Giulia",
+      "content": "adoro ",
+      "id": 21
+    },
+    {
+      "movieId": "61222",
+      "author": "Giulia",
+      "content": "cavalo depressivo e autodestrutivo mais lindo do mundo ",
+      "id": 22
     }
   ]
 }
