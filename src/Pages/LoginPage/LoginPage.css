@@ -102,11 +102,11 @@ input::placeholder {
 
 .spn2{
     text-decoration: none;
-    color: white;
+    color: #cc00bb;
 }
-
+    
 .spn2:hover{
-    color:  #800275;
+    color:  #9c038f;
 }
 
 

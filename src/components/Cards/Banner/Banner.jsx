@@ -46,11 +46,12 @@ const Banner = () => {
       <div className="poster">
         <Carousel
           autoPlay={true}
-          interval={3800}
           infiniteLoop={true}
+          interval={4000}
           showStatus={false}
           showArrows={false}
           showIndicators={false}
+          stopOnHover={false}
         >
           {popularMovies.map((movie) => (
             <Link

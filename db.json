@@ -39,6 +39,26 @@
       "id": "jujubalor22@gmail.com",
       "name": "Giulia",
       "password": "Luan010718"
+    },
+    {
+      "id": "ggiulialor@hotmail.com",
+      "name": "giulia",
+      "password": "Luan"
+    },
+    {
+      "id": "marcio@gmail.com",
+      "name": "Marcio",
+      "password": "123"
+    },
+    {
+      "id": "paulo@gmail.com",
+      "name": "Paulo",
+      "password": "123"
+    },
+    {
+      "id": "joaob@gmail.com",
+      "name": "Joao",
+      "password": "123"
     }
   ],
   "reviews": [
@@ -181,6 +201,60 @@
       "author": "Giulia",
       "content": "cavalo depressivo e autodestrutivo mais lindo do mundo ",
       "id": 22
+    },
+    {
+      "movieId": "12445",
+      "author": "undefined",
+      "content": "Nice Movie!",
+      "id": 23
+    },
+    {
+      "movieId": "767",
+      "author": "undefined",
+      "content": "film ottimo \n",
+      "id": 24
+    },
+    {
+      "movieId": "12445",
+      "author": "undefined",
+      "content": "ottimo film \n",
+      "id": 25
+    },
+    {
+      "movieId": "502356",
+      "author": "giulia",
+      "content": "film perfetto anche per gli adulti ",
+      "id": 26
+    },
+    {
+      "movieId": "12445",
+      "author": "giulia",
+      "content": "adorooo consiglio a tutti ",
+      "id": 27
+    },
+    {
+      "movieId": "12445",
+      "author": "ds",
+      "content": "",
+      "id": 28
+    },
+    {
+      "movieId": "672",
+      "author": "Marcio",
+      "content": "Very Nice Movie! ",
+      "id": 29
+    },
+    {
+      "movieId": "672",
+      "author": "Paulo",
+      "content": "The movie is really good in every way.\n",
+      "id": 30
+    },
+    {
+      "movieId": "672",
+      "author": "Joao",
+      "content": "Nice movie",
+      "id": 31
     }
   ]
 }
