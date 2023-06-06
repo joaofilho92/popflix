@@ -19,7 +19,7 @@ const LoginPage = () => {
     e.preventDefault();
 
     if (validate()) {
-      fetch("http://localhost:5000/user/" + username)
+      fetch("https://json-server-pop-flix.vercel.app/user" + username)
         .then((res) => {
           return res.json();
         })
