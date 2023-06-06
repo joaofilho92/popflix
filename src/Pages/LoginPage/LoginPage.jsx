@@ -19,17 +19,19 @@ const LoginPage = () => {
     e.preventDefault();
 
     if (validate()) {
-      fetch(`https://json-server-pop-flix.vercel.app/user?username=${username}`)
+      console.log("username:", username);
+      fetch(`https://json-server-pop-flix.vercel.app/user?id=${username}`)
         .then((res) => {
           return res.json();
         })
         .then((resp) => {
-          if (Object.keys(resp).length === 0) {
+          if (resp.length === 0) {
             toast.error("Inserisci un'e-mail valida");
           } else {
-            if (resp.password === password) {
+            const user = resp[0];
+            if (user.password === password) {
               toast.success("Success");
-              sessionStorage.setItem("username", resp.name);
+              sessionStorage.setItem("username", user.name);
               usenavigate("/Home");
             } else {
               toast.error("Inserisci una password valida");
