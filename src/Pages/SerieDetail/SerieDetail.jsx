@@ -36,7 +36,7 @@ const SerieDetails = () => {
       .then((res) => res.json())
       .then((data) => setVideos(data.results));
 
-    fetch(`http://localhost:5000/comments`)
+    fetch(`https://json-server-pop-flix.vercel.app/comments`)
       .then((res) => res.json())
       .then((data) =>
         data ? data.filter((comment) => comment.movieId === id) : []
