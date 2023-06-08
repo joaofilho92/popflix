@@ -57,13 +57,12 @@ const SerieDetails = () => {
      const author = sessionStorage.getItem("username");
      const review = { movieId: id, author: author, content: content };
 
-     fetch("http://localhost:5000/comments", {
+     fetch("https://json-server-pop-flix.vercel.app/comments", {
        method: "post",
        headers: {
          Accept: "application/json",
          "Content-Type": "application/json",
        },
-
 
        body: JSON.stringify(review),
      });
