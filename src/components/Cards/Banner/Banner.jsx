@@ -32,6 +32,7 @@ const Banner = () => {
   const getGenres = (genreIds) => {
     const movieGenres = genres
       .filter((genre) => genreIds.includes(genre.id))
+      .slice(0, 3)
       .map((genre) => (
         <span key={genre.id} className="genre">
           {genre.name}
